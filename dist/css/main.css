@@ -55,8 +55,11 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../images/20211014_115421.jpg);
-      border-radius: 50%;
+      background: url(../images/Jojo.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+        border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -154,12 +157,16 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'project1 project2 project3';
+  grid-template-areas: 'bioimage bio bio'
+ 'project1 project2 project3';
   grid-template-columns: repeat(3 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border: #eece1a 3px solid; }
   .about-info .bio {
     grid-area: bio;
@@ -259,11 +266,15 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../images/portrait.jpg);
+      background: url(../images/Jojo.jpg);
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'project1' 'project2' 'project3';
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'project1'
+ 'project2'
+ 'project3';
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
